@@ -3,6 +3,7 @@ import React from 'react';
 
 import './Nav.css';
 import Home from '../Home/Home';
+import Projects from '../Projects/Projects';
 
 
 class Nav extends React.Component {
@@ -10,7 +11,7 @@ class Nav extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            page: 'home',
+            page: 'projects',
         }
 		this.handleHomeClick = this.handleHomeClick.bind(this);
 		this.handleProjectsClick = this.handleProjectsClick.bind(this);
@@ -37,7 +38,7 @@ class Nav extends React.Component {
         } else if (this.state.page === 'projects') {
             return (
                 <div>
-                    projects
+                    <Projects />
                 </div>
             );
         } else if (this.state.page === 'contact') {
