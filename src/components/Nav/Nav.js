@@ -10,7 +10,7 @@ class Nav extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            page: '',
+            page: 'home',
         }
 		this.handleHomeClick = this.handleHomeClick.bind(this);
 		this.handleProjectsClick = this.handleProjectsClick.bind(this);
@@ -53,13 +53,20 @@ class Nav extends React.Component {
         return (
             <div className="shadow">
                 <div className="nav">
-                    <span className="nav-item" onClick={this.handleHomeClick}>HOME</span>
-                    <span className="nav-item" onClick={this.handleProjectsClick}>PROJECTS</span>
-                    <span className="nav-item" onClick={this.handleContactClick}>CONTACT</span>
+                    <span className="nav-item" onClick={this.handleHomeClick}>
+                        HOME
+                    </span>
+                    <span className="nav-item" onClick={this.handleProjectsClick}>
+                        PROJECTS
+                    </span>
+                    <span className="nav-item" onClick={this.handleContactClick}>
+                        CONTACT
+                    </span>
                 </div>
                 <div className="content">
                     {this.displayComponent()}
                 </div>
+
             </div>
         );
     }
