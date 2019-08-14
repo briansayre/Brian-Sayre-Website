@@ -7,12 +7,13 @@
   min-width: 300px;
   margin: 10px auto;
   text-align: center;
+  z-index: 10;
 }
 
 .links {
   width: 70%;
   min-width: 300px;
-  margin: 100px auto 0 auto;
+  margin: 20px auto 0 auto;
   display: flex;
   justify-content: space-evenly;
 }
@@ -25,6 +26,20 @@
   color: white;
   background: linear-gradient(to right, #330867 0%, #330867 100%);
   box-shadow: 0rem 0rem 0.625rem rgba(0, 0, 0, 0.25);
+}
+
+.image-background img {
+  position: relative;
+  top: -10px;
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  min-width: 150px;
+  z-index: 4;
+
+}
+.image-background {
+
 }
 
 a:link, a:hover, a:active, a:visited {

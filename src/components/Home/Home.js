@@ -2,6 +2,7 @@ import React from 'react';
 //import firebase from 'firebase/app';
 
 import './Home.css';
+import me from "../../images/me.png";
 
 
 class Home extends React.Component {
@@ -21,10 +22,15 @@ class Home extends React.Component {
                     <h1>Hello!</h1>
                 </div>
 
+
                 <p className="about-me">
                     My name is Brian Sayre. I am currently a student at Iowa State studying software engineering. 
                     You can see my resume, Github, and LinkedIn below.
                 </p>
+
+                <div className="image-background">
+                    <img className="me-img" alt="" src={me} />
+                </div>
                 
                 <div className="links">
                     <span className="link">

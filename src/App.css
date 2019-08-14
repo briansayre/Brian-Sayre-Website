@@ -1,11 +1,16 @@
 
-.brian-sayre-img {
+.name {
+  text-align: center;
+  font-size: 4vw;
   display: block;
   margin: 50px auto;
   width: 30vw;
+  padding-bottom: 8px;
   max-width: 580px;
   min-width: 200px;
-  box-shadow: 0rem 0rem 0.625rem rgba(0, 0, 0, 0.25);
+  color: #e3e3e3;
+  font-weight: bold;
+  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
 }
 
 .body {
